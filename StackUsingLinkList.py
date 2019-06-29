@@ -8,7 +8,7 @@ class stack:
     def __init__(self):
         self.head = None
     
-    def pus(self,info):
+    def push(self,info):
         info = input('Enter node data: ')
         node = Node()
         node.info = info
@@ -50,7 +50,7 @@ while True:
     choice = int(input('\nEnter the choice: '))
 
     if choice == 1:
-        list.pus(1)
+        list.push(1)
 
     elif choice == 2:
         list.pop()
