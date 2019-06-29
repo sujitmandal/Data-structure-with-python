@@ -18,19 +18,14 @@ class linkList:
         print(info + ' inserted into Linked List')
 
     def deleteLastNode(self):
-        if self.head is None:
-            return
-        if self.head.link is None:
-            self.head = None
-            return
+        if self.head == None:
+            print('\nList is Empty!')
 
-        p = self.head
-        while p.link.link is not None:
-            p = p.link
-        p.link = None
-        
-        print('\nlist after deleted.')
-        self.display()
+        else:
+            self.head = self.head.link
+
+            print('\nlist after deleted.')
+            self.display()
         
     def display(self):
         if self.head is None:
