@@ -18,17 +18,21 @@ class linkList:
         print(info + ' inserted into Linked List')
     
     def reverseList(self):
-        prve = None
-        p = self.head
-        while p is not None:
-            next = p.link
-            p.link = prve
-            prve = p
-            p = next
-        self.head = prve
+        if self.head == Node:
+            print('\nList is Empty!')
+                
+        else:
+            prve = None
+            p = self.head
+            while p is not None:
+                next = p.link
+                p.link = prve
+                prve = p
+                p = next
+            self.head = prve
 
-        print('\nlist after reversing.')
-        self.display()
+            print('\nlist after reversing.')
+            self.display()
         
     def display(self):
         if self.head is None:
