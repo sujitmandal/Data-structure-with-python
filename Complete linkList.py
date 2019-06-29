@@ -18,58 +18,64 @@ class linkList:
         print(info + ' inserted into Linked List')
 
     def deleteLastNode(self):
-        if self.head is None:
-            return
-        if self.head.link is None:
-            self.head = None
-            return
+        if self.head == None:
+            print('\nList is Empty!')
 
-        p = self.head
-        while p.link.link is not None:
-            p = p.link
-        p.link = None
+        else:
+            self.head = self.head.link
+
+            print('\nlist after deleted.')
+            self.display()
         
         print('\nlist after deleted.')
         self.display()
     
     def deleteinfo(self,value):
-        value = input('Enete the value for delete: ')
-        if self.head is None:
-            print('\nList is empty!')
-            return
-
-        #delete first node
-        if self.head.info == value:
-            self.head = self.head.link
-            return
-
-        #delete in between or at the end
-        p = self.head
-        while p.link is not None:
-            if p.link.info == value:
-                break
-            p = p.link
-
-        if p.link is None:
-            print('\nvalue ',value + 'is not in list')
+        if self.head == None:
+            print('\nList is Empty!')
+        
         else:
-            p.link = p.link.link
+            value = input('Enete the value for delete: ')
+            if self.head is None:
+                print('\nList is empty!')
+                return
 
-        print('\nlist after deleted.')
-        self.display()
+            #delete first node
+            if self.head.info == value:
+                self.head = self.head.link
+                return
+
+            #delete in between or at the end
+            p = self.head
+            while p.link is not None:
+                if p.link.info == value:
+                    break
+                p = p.link
+
+            if p.link is None:
+                print('\nvalue ',value + 'is not in list')
+            else:
+                p.link = p.link.link
+
+            print('\nlist after deleted.')
+            self.display()
 
     def reverseList(self):
-        prve = None
-        p = self.head
-        while p is not None:
-            next = p.link
-            p.link = prve
-            prve = p
-            p = next
-        self.head = prve
+        if self.head == Node:
+            print('\nList is Empty!')
+                
+        else:
+            prve = None
+            p = self.head
+            while p is not None:
+                next = p.link
+                p.link = prve
+                prve = p
+                p = next
+            self.head = prve
 
-        print('\nlist after reversing.')
-        self.display()
+            print('\nlist after reversing.')
+            self.display()
         
     def display(self):
         if self.head is None:
