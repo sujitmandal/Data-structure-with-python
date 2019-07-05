@@ -8,8 +8,7 @@ class linkList:
     def __init__(self):
         self.head = None
     
-    def create(self,data):
-        
+    def create(self):  
         temp = Node()
         temp.info = input('Enter node data: ')
         print('\n')
@@ -50,7 +49,7 @@ while True:
     choice = int(input('\nEnter the choice: '))
 
     if choice == 1:
-        list.create(1)
+        list.create()
 
     elif choice == 2:
         list.display()
