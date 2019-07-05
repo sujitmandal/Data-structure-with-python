@@ -7,27 +7,39 @@ class Node:
 class linkList:
     def __init__(self):
         self.head = None
+        self.temp = None
     
-    def create(self,info):
-        info = input('Enter node data: ')
-        node = Node()
-        node.info = info
-        node.link = self.head
-        self.head = node
+    def create(self,data):
+        
+        temp = Node()
+        temp.info = input('Enter node data: ')
         print('\n')
-        print(info + ' inserted into Linked List')
+        print(temp.info + ' inserted into Linked List')
+        temp.link = None
+
+        if self.head == None:
+            self.head = temp
+            return
+        else:
+            newnode = Node()
+            newnode = self.head
+
+            while newnode.link != None:
+                newnode = newnode.link
+            newnode.link = temp
 
     def display(self):
-        if self.head is None:
+        temp = Node()
+        if self.head == None:
             print('\nList is empty!')
             return
         else:
+            temp = self.head
             print('List is: ')
-            p = self.head
-            while p is not None:
-                print('info = ' + p.info)
-                p = p.link
-            print()
+            while temp != None:
+                print('info = ' + temp.info)
+                temp = temp.link
+        
 
 list = linkList()
 
