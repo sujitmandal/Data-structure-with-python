@@ -7,7 +7,6 @@ class Node:
 class linkList:
     def __init__(self):
         self.head = None
-        self.temp = None
     
     def create(self,data):
         
