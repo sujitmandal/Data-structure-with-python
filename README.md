@@ -17,7 +17,7 @@ Data structures provide a means to manage large amounts of data efficiently for 
  Requirement’s:
 -----------------
 
-• Python 3.7
+• Python 
 
 • Anaconda
 
@@ -36,19 +36,18 @@ Windows:
 -------
 • Download https://www.anaconda.com/downloads
 
-Linux:
-------
-Command:
--------
-• " wget https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh "
-
-• " bash Anaconda3-5.3.1-Linux-x86_64.sh "
-
-• " conda update anaconda "
-
 • Visual Studio Code :
 ----------------------
 Download https://code.visualstudio.com/Download
+
+•Linux:
+------
+How to install Anaconda In Linux | Create Environment | Install TensorFlow | Opencv library |
+---------------------------------------------------------------------------------------------
+ [![How to install | Python | | Anaconda | | Opencv library |](https://yt-embed.herokuapp.com/embed?v=Mfbrxy8gK6A)](https://www.youtube.com/watch?v=Mfbrxy8gK6A "How to install Anaconda In Linux | Create Environment | Install TensorFlow | Opencv library |")
+
+• Windows:
+-------
 
 • How to install | Python | | Anaconda | | Opencv library |
 ------------------------------------------------------------
