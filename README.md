@@ -32,8 +32,6 @@ Download https://www.python.org/downloads/
 
 • Anaconda : 
 ------------
-Windows:
--------
 • Download https://www.anaconda.com/downloads
 
 • Visual Studio Code :
